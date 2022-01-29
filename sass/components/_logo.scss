@@ -1,7 +1,8 @@
 .logo {
     color: var(--accent-color);
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19);
+    @include font(700, 24px, 1.17);
+    // @include font(700, 26px, 1.19);
     // font-weight: 700;
     // font-size: 26px;
     // line-height: 1.19;

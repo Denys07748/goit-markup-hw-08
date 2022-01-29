@@ -1,6 +1,7 @@
 .form__title {
     margin-bottom: 12px;
-    @include font(700, 20px, 1.15);
+    @include font(700, 20px, 1.5);
+    // @include font(700, 20px, 1.15);
     // font-weight: 700;
     // font-size: 20px;
     // line-height: 1.15;
@@ -18,9 +19,6 @@
 .form__label {
     margin-bottom: 4px;
     @include font(null, 12px, 1.17, 0.01em);
-    // font-size: 12px;
-    // line-height: 1.17;
-    // letter-spacing: 0.01em;
 }
 
 .form__input {
@@ -63,9 +61,6 @@
 
     &::placeholder {
         @include font(null, 14px, 1.14, 0.01em);
-        // font-size: 14px;
-        // line-height: 1.14;
-        // letter-spacing: 0.01em;
         color: var(--textarea-color);
     }
 
@@ -76,7 +71,7 @@
 }
 
 .policy {
-    @extend %flex;
+    @extend %flex-center;
     margin-bottom: 30px;
 }
 

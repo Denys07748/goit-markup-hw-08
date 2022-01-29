@@ -1,47 +1,48 @@
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 
-    &__container {
-        @extend %flex;
-    }
+    // &__container {
+        // @extend %flex-center;
+    // }
 
-    &__nav {
-        @extend %flex;
-    }
+    // &__nav {
+        // @extend %flex-center;
+    // }
 
     &__list {
-        @extend %flex;
-        margin-left: 93px;
+        // @extend %flex-center;
+        // margin-left: 93px;
         color: var(--title-text-color);
     }
 
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 50px;
+    // }
 }
 
 .header__link {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
-    @include font(500, null, 1.14, 0.02em);
+    @include font(500, 40px, 1.17, 0.02em);
+    // @include font(500, null, 1.14, 0.02em);
     // font-weight: 500;
     // font-size: 14px;
     // line-height: 1.14;
     // letter-spacing: 0.02em;
     transition: color var(--transit-time) var(--timing-function);
 
-    &--current::after {
-        position: absolute;
-        display: block;
-        left: 0;
-        bottom: -1px;
-        content: "";
-        height: 4px;
-        width: 100%;
-        background-color: currentColor;
-        border-radius: 2px;
-    }
+    // &--current::after {
+    //     position: absolute;
+    //     display: block;
+    //     left: 0;
+    //     bottom: -1px;
+    //     content: "";
+    //     height: 4px;
+    //     width: 100%;
+    //     background-color: currentColor;
+    //     border-radius: 2px;
+    // }
 
     &:hover,
     &:focus,

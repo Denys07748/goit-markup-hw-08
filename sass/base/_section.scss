@@ -4,8 +4,10 @@
 }
 
 .section-title {
-    margin-bottom: 50px;
-    @include font(null, 36px, 1.17, null);
+    margin-bottom: 30px;
+    @include font(null, 28px, 1.17);
+    // margin-bottom: 50px;
+    // @include font(null, 36px, 1.17);
     // font-size: 36px;
     // line-height: 1.17;
     text-align: center;

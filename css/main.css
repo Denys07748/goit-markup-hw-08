@@ -97,9 +97,10 @@ body {
 }
 
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -117,7 +118,7 @@ body {
           clip-path: inset(50%);
 }
 
-.social__link, .policy, .header__container, .header__nav, .header__list, .contacts, .contacts__link, .clients__link {
+.social__link, .policy, .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,9 +133,26 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button {
@@ -164,8 +182,8 @@ body {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -298,7 +316,7 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
@@ -449,16 +467,11 @@ body {
 }
 
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__list {
-  margin-left: 93px;
   color: var(--title-text-color);
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header__link {
@@ -466,34 +479,29 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--transit-time) var(--timing-function);
   transition: color var(--transit-time) var(--timing-function);
-}
-
-.header__link--current::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: -1px;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: currentColor;
-  border-radius: 2px;
 }
 
 .header__link:hover, .header__link:focus, .header__link--current {
   color: var(--accent-color);
 }
 
-.contacts {
-  margin-left: auto;
+.contacts__link--bigger {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
+.contacts__link--smaller {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 .contacts__icon {
@@ -524,15 +532,21 @@ body {
   margin-left: auto;
   color: var(--primery-bg-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .features {
   padding-top: 94px;
-  --card-item: 4;
+  --card-item: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    --card-item: 2;
+  }
 }
 
 .features__item::before {
@@ -563,6 +577,10 @@ body {
   background-image: url("../images/astronaut.svg");
 }
 
+.functions {
+  display: none;
+}
+
 .functions__item {
   position: relative;
 }
@@ -580,7 +598,7 @@ body {
 
 .team {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   background-color: var(--additional-bg-color);
@@ -591,6 +609,7 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
@@ -636,15 +655,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
-}
-
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .footer__box--left {
@@ -746,6 +756,7 @@ body {
   color: var(--primery-bg-color);
   font-size: 18px;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform var(--transit-time) var(--timing-function);

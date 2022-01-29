@@ -3,7 +3,7 @@
 }
 
 .clients__link {
-    @extend %flex;
+    @extend %flex-center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--social-icon-color);

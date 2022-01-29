@@ -1,6 +1,11 @@
 .features {
     padding-top: 94px;
-    --card-item: 4;
+    --card-item: 1;
+
+    @media screen and (min-width: $tablet) {
+        --card-item: 2;
+    }
+
 }
 
 .features__item::before {

@@ -1,13 +1,21 @@
 .contacts {
-    @extend %flex;
-    margin-left: auto;
+    // @extend %flex-center;
+    // margin-left: auto;
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 
     &__link {
-        @extend %flex;
+        // @extend %flex-center;
+
+        &--bigger {
+            @include font(500, 34px, 1.17, 0.02em);
+        }
+
+        &--smaller {
+            @include font(500, 24px, 1.17, 0.02em);
+        }
     }
 
     &__icon {

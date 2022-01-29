@@ -5,10 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     @include font(400, 14px, 1.71, 0.03em);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
 }
 
 .title {
@@ -21,7 +17,5 @@ body {
 .title--secondary {
     margin-bottom: 10px;
     @include font(700, 14px, 1.14, null); 
-    // font-size: 14px;
-    // line-height: 1.14;
     text-transform: uppercase;
 }
