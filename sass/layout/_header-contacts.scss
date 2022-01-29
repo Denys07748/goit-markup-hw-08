@@ -1,0 +1,17 @@
+.contacts {
+    @extend %flex;
+    margin-left: auto;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__link {
+        @extend %flex;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+} 

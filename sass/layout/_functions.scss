@@ -1,0 +1,14 @@
+.functions__item {
+    position: relative;
+}
+
+.functions__label {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 27px 0;
+    width: 100%;
+    color: var(--primery-bg-color);
+    background-color: var(--functions-bg-color);
+}

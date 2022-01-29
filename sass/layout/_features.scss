@@ -1,0 +1,29 @@
+.features {
+    padding-top: 94px;
+    --card-item: 4;
+}
+
+.features__item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: var(--card-gap);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--additional-bg-color);
+}
+
+.features__item:nth-child(1)::before {
+    background-image: url('../images/antenna.svg');
+}
+.features__item:nth-child(2)::before {
+    background-image: url('../images/clock.svg');
+}
+.features__item:nth-child(3)::before {
+    background-image: url('../images/diagram.svg');
+}
+.features__item:nth-child(4)::before {
+    background-image: url('../images/astronaut.svg');
+}
