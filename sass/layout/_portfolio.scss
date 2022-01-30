@@ -1,3 +1,13 @@
+.portfolio {
+    @media screen and (min-width: $tablet) {
+        --card-item: 2;
+    }
+
+    @media screen and (min-width: $desktop) {
+        --card-item: 3;
+    }
+}
+
 .portfolio__thumb {
     position: relative;
     overflow: hidden;

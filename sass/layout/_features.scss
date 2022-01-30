@@ -1,11 +1,22 @@
 .features {
-    padding-top: 94px;
-    --card-item: 1;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     @media screen and (min-width: $tablet) {
         --card-item: 2;
     }
 
+    @media screen and (min-width: $desktop) {
+        --card-item: 4;
+        padding-top: 94px;
+    }
+
+}
+
+.features__title {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .features__item::before {

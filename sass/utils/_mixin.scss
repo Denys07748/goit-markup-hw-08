@@ -4,3 +4,14 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
+
+@mixin flex-center($dis:flex, $ai:center, $jc:center) {
+    display: $dis;
+    align-items: $ai;
+    justify-content: $jc;
+}
+// %flex-center {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }

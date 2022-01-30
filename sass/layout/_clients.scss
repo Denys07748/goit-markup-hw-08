@@ -1,11 +1,19 @@
 .clients {
-    --card-item: 6; 
+    --card-item: 2;
+    
+    @media screen and (min-width: $tablet) {
+        --card-item: 3;
+    }
+
+    @media screen and (min-width: $desktop) {
+        --card-item: 6;
+    }
 }
 
 .clients__link {
     @extend %flex-center;
-    width: 170px;
-    height: 92px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid var(--social-icon-color);
     box-sizing: border-box;
     border-radius: 4px;
