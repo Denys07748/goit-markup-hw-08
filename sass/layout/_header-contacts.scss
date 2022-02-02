@@ -1,7 +1,9 @@
 .contacts {
-    @media screen and (min-width: $tablet) {
-        margin-left: auto;
-    }
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }  
 
     @media screen and (min-width: $desktop) {
         @include flex-center;
@@ -14,26 +16,20 @@
     }
 
     &__link {
-        &--bigger {
-            @include font(500, 34px, 1.17, 0.02em);
+        @include font(500, 12px, 1.17, 0.02em);
 
-            @media screen and (min-width: $tablet) and (max-width: 1199px) {
-                padding-top: 5px;
-                padding-bottom: 20px;
-            }
-        }
-
-        &--smaller {
-            @include font(500, 24px, 1.17, 0.02em);
-
-            @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        &--first {
+            @media screen and (max-width: 1199px) {
                 padding-top: 20px;
                 padding-bottom: 5px;
             }
         }
 
-        @media screen and (min-width: $tablet) {
-            @include font(500, 12px, 1.17, 0.02em);
+        &--second {
+            @media screen and (max-width: 1199px) {
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
         }
 
         @media screen and (min-width: $desktop) {

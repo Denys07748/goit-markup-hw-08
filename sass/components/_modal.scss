@@ -6,8 +6,15 @@
     height: 100%;
     background-color: var(--backdrop-bg-color);
 
+    @media screen and (min-width: $tablet) {
     transition: visibility var(--transit-time) var(--timing-function),
     opacity var(--transit-time) var(--timing-function);
+    }
+
+    @media screen and (max-width: 767px) {
+        overflow-y: scroll;
+        padding: 15px;
+    }
 } 
 
 .is-hidden {
@@ -18,20 +25,37 @@
 
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    min-height: 581px;
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
     padding: 40px;
     background-color: var(--primery-bg-color);
     border-radius: 4px;
 
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--transit-time) var(--timing-function);
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform var(--transit-time) var(--timing-function);
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 528px;
+        min-height: 581px;
+    }
 
     .backdrop.is-hidden & {
+        @media screen and (min-width: $tablet) {
         transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 }
 
