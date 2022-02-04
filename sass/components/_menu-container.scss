@@ -40,6 +40,10 @@
 
     transform: translateX(100%);
     transition: transform var(--transit-time) var(--timing-function);
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }  
 }
 
 .menu-container.is-open {
