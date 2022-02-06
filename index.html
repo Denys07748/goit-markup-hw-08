@@ -17,7 +17,7 @@
     <!--Шапка-->
     <header class="header">
         <div class="header__container container">
-            <a href="/" lang="en" class="logo link">
+            <a href="/" lang="en" class="logo logo__header link">
                 Web<span class="logo__header--black">Studio</span>
             </a>
             <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -71,7 +71,7 @@
 
             <ul class="mobile-social list" lang="en">
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link mobile-social__link--first link">Instagram</a>
+                    <a href="" class="mobile-social__link link">Instagram</a>
                 </li>
                 <li class="mobile-social__item">
                     <a href="" class="mobile-social__link link">Twitter</a>
@@ -80,7 +80,7 @@
                     <a href="" class="mobile-social__link link">Facebook</a>
                 </li>
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link mobile-social__link--last link">LinkedIn</a>
+                    <a href="" class="mobile-social__link link">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -427,7 +427,8 @@
     <!--Подвал-->
     <footer class="footer">
         <div class="footer__container container">
-                <div class="footer__box footer__box--first">
+            <div class="footer__wrapper">
+                <div class="footer__box">
                     <a href="/" lang="en" class="logo logo__footer link">
                         Web<span class="logo__footer--white">Studio</span>
                     </a>
@@ -472,6 +473,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
 
             <form action="#" class="footer__form">
                 <p class="footer__title title--secondary title">Подпишитесь на рассылку</p>
@@ -529,7 +531,7 @@
                 <input class="policy__checkbox" type="checkbox" name="policy">
                 <span class="policy__icon">
                 </span>
-                Соглашаюсь с рассылкой и принимаю <a href="" class="policy__link">Условия договора</a>
+                <span>Соглашаюсь с рассылкой и принимаю <a href="" class="policy__link">Условия договора</a></span>
             </label>
             
             <button type="submit" class="form__button button">Отправить</button>

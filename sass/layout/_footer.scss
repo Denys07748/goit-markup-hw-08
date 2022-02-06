@@ -11,24 +11,32 @@
 .footer__container {
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: baseline;
+        @include flex-center($ai:baseline)
     }
     
     @media screen and (max-width: 1199px) {
-        justify-content: space-around;
         flex-wrap: wrap;
     } 
 }
 
-.footer__box {
-
+.footer__wrapper {
     @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
-    } 
+    }
+
+    @media screen and (min-width: $tablet) {
+        @include flex-center($ai:baseline)
+    }
 }
 
-.footer__box--first { 
+.footer__box:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    } 
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
 
     @media screen and (min-width: $desktop) {
         margin-right: 70px;

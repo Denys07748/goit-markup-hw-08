@@ -1,27 +1,23 @@
 .mobile-social {
     @include flex-center($jc:flex-start);
     flex-wrap: wrap;
-    margin-top: 64px;
 }
 
 .mobile-social__link {
     @include font(500, 18px, 1.22, 0.02em);
     color: var(--accent-color);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-left: 1px solid var(--form-border-color);
-
-    &--first {
-        border: none;
-        padding-left: 0;
-    }
-
-    &--last {
-        padding-right: 0;
-    }
 
     &:hover,
     &:focus {
         color: var(--hover-button-color);
+    }
+
+    .mobile-social__item:not(:first-child) & {
+        padding-left: 10px;
+        border-left: 1px solid var(--form-border-color);
+    }
+
+    .mobile-social__item:not(:last-child) & {
+        padding-right: 10px;
     }
 }

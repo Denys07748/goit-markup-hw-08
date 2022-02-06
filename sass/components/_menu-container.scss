@@ -73,6 +73,8 @@
 }
 
 .mobile-contacts__link {
+    margin-bottom: 64px;
+
     &--bigger {
         @include font(500, 34px, 1.17, 0.02em);
     }
