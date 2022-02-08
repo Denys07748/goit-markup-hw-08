@@ -36,7 +36,7 @@
 
     }
 
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $desktop) {
         max-width: 1600px;
         max-height: 600px;
         padding-top: 200px;
