@@ -647,7 +647,7 @@ body.modal-open {
   margin-bottom: 32px;
 }
 
-.mobile-contacts__link {
+.mobile-contacts {
   margin-bottom: 64px;
 }
 
@@ -906,7 +906,6 @@ body.modal-open {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  max-width: 480px;
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -925,23 +924,22 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .hero {
-    max-width: 768px;
     max-height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero_bg_tab-1x.jpg");
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero_bg_tab-1x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 576px) and (min-device-pixel-ratio: 2), screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 192dpi), screen and (min-width: 576px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero_bg_tab-2x.jpg");
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero_bg_tab-2x.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .hero {
     max-width: 1600px;
     max-height: 600px;
@@ -952,7 +950,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-width: 960px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero_bg-2x.jpg");
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero_bg-2x.jpg");
